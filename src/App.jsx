@@ -34,22 +34,18 @@ const socialLinks = [
   {
     iconSrc: LinkedInIcon,
     url: 'https://www.linkedin.com/in/avnishmmehta/',
-    alt: 'LinkedIn',
+    alt: 'AvnishMehtaLinkedIn',
   },
   {
     iconSrc: DownloadIcon,
-    url: 'https://yourwebsite.com/download',
-    alt: 'Download',
+    url: '/files/avnishContact.vcf',
+    alt: 'Download VCF',
+    download: true,
   },
   {
     iconSrc: PictureAsPdfIcon,
     url: '/files/MIPL company profile.pdf',//change the domain while hosting live
     alt: 'PDF',
-  },
-  {
-    iconSrc: ShareIcon,
-    url: 'https://yourwebsite.com/share',
-    alt: 'Share',
   },
 ];
 
@@ -70,6 +66,24 @@ const additionalServices = [
 
 function App() {
   const [showMore, setShowMore] = useState(false);
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Metaphi Innovations',
+          text: 'Check out this awesome profile!',
+          url: 'https://metaphi.in',//add proper path here
+        });
+        console.log('Shared successfully');
+      } catch (error) {
+        console.error('Sharing failed:', error);
+      }
+    } else {
+      alert('Sharing not supported on this browser.');
+    }
+  };
+
   return (
     <>
       <Box
@@ -178,7 +192,7 @@ function App() {
                 CEO & Founder
               </Typography>
               <Typography variant="body2" color="#000000" fontWeight="400" fontSize="16px" fontFamily="Roboto Serif">
-                Empowering Innovation<br />Across Industries
+                From Concept to Code- <br />We Do It All
               </Typography>
             </Box>
 
@@ -268,12 +282,13 @@ function App() {
 
           <Box mt={4}>
             <Stack direction="row" justifyContent="space-around" alignItems="center" mb={3}>
-              {socialLinks.map(({ iconSrc, url, alt }, i) => (
+              {socialLinks.map(({ iconSrc, url, alt, download }, i) => (
                 <Link
                   key={i}
                   href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={download ? undefined : "_blank"}
+                  rel={download ? undefined : "noopener noreferrer"}
+                  download={download || undefined}
                   sx={{
                     width: 32,
                     height: 32,
@@ -288,6 +303,23 @@ function App() {
                   <img src={iconSrc} alt={alt} style={{ width: 18, height: 18 }} />
                 </Link>
               ))}
+
+              <Box
+                onClick={handleShare}
+                sx={{
+                  width: 32,
+                  height: 32,
+                  borderRadius: '50%',
+                  background: 'linear-gradient(to right, #07B9CE, #3969E7, #7D2AE7)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                }}
+              >
+                <img src={ShareIcon} alt="Share" style={{ width: 18, height: 18 }} />
+              </Box>
+
             </Stack>
 
             <Box
