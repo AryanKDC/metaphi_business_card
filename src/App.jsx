@@ -18,17 +18,22 @@ import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 const socialLinks = [
   {
     iconSrc: WhatsAppIcon,
-    url: 'https://wa.me/919702464242',
+    url: 'https://api.whatsapp.com/send/?phone=9702464242&text=Hello&type=phone_number&app_absent=0',
     alt: 'WhatsApp',
   },
   {
     iconSrc: InstagramIcon,
-    url: 'https://instagram.com/yourprofile',
+    url: 'https://www.instagram.com/metaphi.innovations/?hl=en',
     alt: 'Instagram',
   },
   {
     iconSrc: LinkedInIcon,
-    url: 'https://linkedin.com/in/yourprofile',
+    url: 'https://www.linkedin.com/company/metaphi-innovations/',
+    alt: 'MetaphiLinkedIn',
+  },
+  {
+    iconSrc: LinkedInIcon,
+    url: 'https://www.linkedin.com/in/avnishmmehta/',
     alt: 'LinkedIn',
   },
   {
@@ -38,7 +43,7 @@ const socialLinks = [
   },
   {
     iconSrc: PictureAsPdfIcon,
-    url: 'https://yourwebsite.com/file.pdf',
+    url: '/files/MIPL company profile.pdf',//change the domain while hosting live
     alt: 'PDF',
   },
   {
@@ -83,8 +88,8 @@ function App() {
         <Box
           sx={{
             position: 'absolute',
-            top: '-100px',  
-            right: '-500px',  
+            top: '-100px',
+            right: '-500px',
             width: '1200px',
             height: '320px',
             backgroundColor: '#F1E8FC',
@@ -198,14 +203,14 @@ function App() {
               </Stack>
 
               <Stack direction="row" alignItems="center" spacing={2} mb={2}>
-                <Link href="mailto:avnish@metaphi.com" underline="none" color="inherit" sx={{ display: 'flex', alignItems: 'center' }}>
+                <Link href="mailto:avnish@metaphi.in" underline="none" color="inherit" sx={{ display: 'flex', alignItems: 'center' }}>
                   <img src={EmailIcon} alt="Email" style={{ width: 20, height: 20, marginRight: 8 }} />
-                  <Typography variant="body2" fontWeight="400" fontFamily="Roboto Serif">avnish@metaphi.com</Typography>
+                  <Typography variant="body2" fontWeight="400" fontFamily="Roboto Serif">avnish@metaphi.in</Typography>
                 </Link>
               </Stack>
 
               <Stack direction="row" alignItems="center" spacing={2}>
-                <Link href="https://www.metaphi.in" target="_blank" rel="noopener noreferrer" underline="none" color="inherit" sx={{ display: 'flex', alignItems: 'center' }}>
+                <Link href="https://metaphi.in/ " target="_blank" rel="noopener noreferrer" underline="none" color="inherit" sx={{ display: 'flex', alignItems: 'center' }}>
                   <img src={LanguageIcon} alt="Website" style={{ width: 20, height: 20, marginRight: 8 }} />
                   <Typography fontWeight="400" fontFamily="Roboto Serif" variant="body2">www.metaphi.in</Typography>
                 </Link>
