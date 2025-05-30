@@ -84,7 +84,7 @@ function App() {
     <>
       <Box
         sx={{
-          width: { xs: '412px', md: '800px', lg: '1200px', xl: '1400px' },
+          width: { xs: '450px', md: '800px', lg: '1200px', xl: '1400px' },
           minHeight: '100vh',
           backgroundColor: '#FFFFFF',
           display: 'flex',
@@ -202,7 +202,8 @@ function App() {
               <Typography sx={{
                 textAlign: { lg: 'center', xs: "" },
                 mb: 2,
-                fontFamily: "AirIndiaRegular"
+                fontFamily: "AirIndiaRegular",
+                fontSize: '20px'
               }}>
                 Services
               </Typography>
