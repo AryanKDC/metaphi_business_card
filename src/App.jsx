@@ -199,6 +199,13 @@ function App() {
             </Box>
 
             <Box mt={"44px"}>
+              <Typography sx={{
+                textAlign: {lg: 'center', xs: ""},
+                mb: 2,
+                fontFamily: "AirIndiaRegular"
+              }}>
+                Services
+              </Typography>
               <Stack direction="row" flexWrap="wrap" gap={1} justifyContent={{ lg: 'center', xs: 'flex-start' }}>
                 {[...primaryServices, ...(showMore ? additionalServices : [])].map((service, index) => (
                   <Box
