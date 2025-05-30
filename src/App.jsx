@@ -190,11 +190,11 @@ function App() {
               <Typography variant="h6" fontWeight="800" fontFamily="AirIndiaRegular">
                 Avnish M Mehta
               </Typography>
-              <Typography variant="body2" fontWeight="600" fontSize="16px" fontFamily="Roboto Serif">
+              <Typography variant="body2" fontWeight="600" fontSize="16px" fontFamily="AirIndiaRegular">
                 CEO & Founder
               </Typography>
-              <Typography variant="body2" color="#000000" fontWeight="400" fontSize="16px" fontFamily="Roboto Serif">
-                Metaphi Innovations <br /> Tech Entrepreneur and Digital Transformation Strategist
+              <Typography variant="body2" color="#000000"  fontSize="16px" fontFamily="Nunito Sans">
+                <span style={{fontFamily:"AirIndiaRegular"}}>Metaphi Innovations</span> <br /> Tech Entrepreneur and Digital Transformation Strategist
               </Typography>
             </Box>
 
@@ -209,7 +209,7 @@ function App() {
                       borderRadius: '8px',
                       fontSize: '16px',
                       fontWeight: 500,
-                      fontFamily: 'Roboto Serif',
+                      fontFamily: 'Nunito Sans',
                       color: '#1C1C1E',
                       background: `
                         linear-gradient(white, white) padding-box,
@@ -229,7 +229,7 @@ function App() {
                     borderRadius: '8px',
                     fontSize: '16px',
                     fontWeight: 500,
-                    fontFamily: 'Roboto Serif',
+                    fontFamily: 'Nunito Sans',
                     color: '#1C1C1E',
                     cursor: 'pointer',
                     background: `
@@ -254,7 +254,7 @@ function App() {
                 boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
                 maxWidth: {
                   xs: '330px',
-                  md: '650px', // wider to fit three side-by-side
+                  md: '650px',  
                 },
                 mx: 'auto',
               }}
@@ -278,7 +278,7 @@ function App() {
                     sx={{ display: 'flex', alignItems: 'center' }}
                   >
                     <img src={PhoneIcon} alt="Phone" style={{ width: 20, height: 20, marginRight: 8 }} />
-                    <Typography variant="body2" fontWeight="400" fontFamily="Roboto Serif">
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
                       +91 97024 64242
                     </Typography>
                   </Link>
@@ -297,7 +297,7 @@ function App() {
                     sx={{ display: 'flex', alignItems: 'center' }}
                   >
                     <img src={EmailIcon} alt="Email" style={{ width: 20, height: 20, marginRight: 8 }} />
-                    <Typography variant="body2" fontWeight="400" fontFamily="Roboto Serif">
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
                       avnish@metaphi.in
                     </Typography>
                   </Link>
@@ -318,7 +318,7 @@ function App() {
                     sx={{ display: 'flex', alignItems: 'center' }}
                   >
                     <img src={LanguageIcon} alt="Website" style={{ width: 20, height: 20, marginRight: 8 }} />
-                    <Typography fontWeight="400" fontFamily="Roboto Serif" variant="body2">
+                    <Typography fontWeight="500" fontFamily="Nunito Sans" variant="body2">
                       www.metaphi.in
                     </Typography>
                   </Link>
@@ -427,6 +427,7 @@ function App() {
                       WebkitBackgroundClip: 'text',
                       color: 'transparent',
                       WebkitTextFillColor: 'transparent',
+                      fontFamily: 'Nunito Sans'
                     }}
                   >
                     Connect on WhatsApp
@@ -460,10 +461,11 @@ function App() {
                   alignItems: 'center',
                   py: 0.6,
                   cursor: 'pointer',
+                  
                 }}
               >
                 <PersonAddAltIcon sx={{ color: 'white', mr: 1 }} />
-                <Typography color="white" fontWeight="bold">
+                <Typography color="white" fontWeight="bold" fontFamily = 'Nunito Sans'>
                   Add to Contact
                 </Typography>
               </Box>
