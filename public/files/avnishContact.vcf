@@ -1,14 +1,15 @@
 BEGIN:VCARD
 VERSION:3.0
+N:Mehta;Avnish;M;;
 FN:Avnish M Mehta
 TITLE:CEO & Founder
 ORG:Metaphi Innovations
 TEL;TYPE=CELL:+91 97024 64242
 EMAIL:avnish@metaphi.in
 URL:https://metaphi.in
-URL:https://kdigitalcurry.com/
-URL:https://www.linkedin.com/in/avnishmmehta/
-URL:https://www.instagram.com/kdigitalcurry/
-URL:https://www.linkedin.com/company/kdigitalcurry/
-ADR;TYPE=WORK,PREF:;;10, 2nd Floor, Chandra Puspa, Hirachand Desai Rd, Opp. Ghatkopar Metro Station, Ghatkopar West, Mumbai, Maharashtra 40008
+NOTE:LinkedIn: https://www.linkedin.com/in/avnishmmehta/
+NOTE:Instagram: https://www.instagram.com/kdigitalcurry/
+NOTE:Company LinkedIn: https://www.linkedin.com/company/kdigitalcurry/
+NOTE:KDigitalCurry Website: https://kdigitalcurry.com/
+ADR;TYPE=WORK,PREF:;;10, 2nd Floor, Chandra Puspa, Hirachand Desai Rd, Opp. Ghatkopar Metro Station;Ghatkopar West;Mumbai;Maharashtra;400086;India
 END:VCARD
