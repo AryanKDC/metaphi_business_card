@@ -6,6 +6,7 @@ import profileImage from './images/profileimg.jpg';
 import PhoneIcon from './images/Call.png';
 import EmailIcon from './images/Mail.png';
 import LanguageIcon from './images/Website.png';
+import MapIcon from './images/Map.png';
 import WhatsAppIcon from './images/whatsapp.png';
 import InstagramIcon from './images/instagram.png';
 import LinkedInIcon from './images/linkedin.png';
@@ -223,10 +224,17 @@ function App() {
                 </Link>
               </Stack>
 
-              <Stack direction="row" alignItems="center" spacing={2}>
+              <Stack direction="row" alignItems="center" spacing={2}  mb={2}>
                 <Link href="https://metaphi.in/ " target="_blank" rel="noopener noreferrer" underline="none" color="inherit" sx={{ display: 'flex', alignItems: 'center' }}>
                   <img src={LanguageIcon} alt="Website" style={{ width: 20, height: 20, marginRight: 8 }} />
                   <Typography fontWeight="400" fontFamily="Roboto Serif" variant="body2">www.metaphi.in</Typography>
+                </Link>
+              </Stack>
+
+              <Stack direction="row" alignItems="center" spacing={2}>
+                <Link href="https://www.google.com/maps/place/K+DIGITALCURRY/@19.0875495,72.9075216,13z/data=!4m6!3m5!1s0x3be7c774623709b5:0x967265778402237d!8m2!3d19.0866689!4d72.9080822!16s%2Fg%2F11rggrcpkm?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" underline="none" color="inherit" sx={{ display: 'flex', alignItems: 'center' }}>
+                  <img src={MapIcon} alt="Website" style={{ width: 20, height: 20, marginRight: 8 }} />
+                  <Typography fontWeight="400" fontFamily="Roboto Serif" variant="body2">Ghatkhopar</Typography>
                 </Link>
               </Stack>
             </Box>
