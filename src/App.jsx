@@ -193,14 +193,14 @@ function App() {
               <Typography variant="body2" fontWeight="600" fontSize="16px" fontFamily="AirIndiaRegular">
                 CEO & Founder
               </Typography>
-              <Typography variant="body2" color="#000000"  fontSize="16px" fontFamily="Nunito Sans">
-                <span style={{fontFamily:"AirIndiaRegular"}}>Metaphi Innovations</span> <br /> Tech Entrepreneur and Digital Transformation Strategist
+              <Typography variant="body2" color="#000000" fontSize="16px" fontFamily="Nunito Sans">
+                <span style={{ fontFamily: "AirIndiaRegular" }}>Metaphi Innovations</span> <br /> Tech Entrepreneur and Digital Transformation Strategist
               </Typography>
             </Box>
 
             <Box mt={"44px"}>
               <Typography sx={{
-                textAlign: {lg: 'center', xs: ""},
+                textAlign: { lg: 'center', xs: "" },
                 mb: 2,
                 fontFamily: "AirIndiaRegular"
               }}>
@@ -257,25 +257,27 @@ function App() {
                 p: 2,
                 borderRadius: 2,
                 border: '1px solid #ccc',
-                bgcolor: '#FFFFF',
+                bgcolor: '#FFFFFF',
                 boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
                 maxWidth: {
                   xs: '330px',
-                  md: '650px',  
+                  md: '900px',
                 },
                 mx: 'auto',
               }}
             >
               <Stack
-                direction={{ xs: 'column', md: 'row' }}
-                spacing={2}
+                direction="row"
                 flexWrap="wrap"
-                justifyContent="space-between"
+                justifyContent="flex-start"
+                rowGap={3.5}
+                columnGap={2}
               >
+
                 <Stack
                   direction="row"
                   alignItems="center"
-                  spacing={2}
+                  spacing={1}
                   sx={{ width: { xs: '100%', md: '30%' } }}
                 >
                   <Link
@@ -291,12 +293,7 @@ function App() {
                   </Link>
                 </Stack>
 
-                <Stack
-                  direction="row"
-                  alignItems="center"
-                  spacing={2}
-                  sx={{ width: { xs: '100%', md: '30%' } }}
-                >
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
                   <Link
                     href="mailto:avnish@metaphi.in"
                     underline="none"
@@ -310,12 +307,57 @@ function App() {
                   </Link>
                 </Stack>
 
-                <Stack
-                  direction="row"
-                  alignItems="center"
-                  spacing={2}
-                  sx={{ width: { xs: '100%', md: '30%' } }}
-                >
+
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
+                  <Link
+                    href="https://www.linkedin.com/in/avnishmmehta/"
+                    underline="none"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    sx={{ display: 'flex', alignItems: 'center' }}
+                  >
+                    <img src={LinkedInIcon} alt="Linkedin Avnish" style={{ width: 20, height: 20, marginRight: 8 }} />
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans" sx={{}}>
+                      LinkedIn Avnish Mehta
+                    </Typography>
+                  </Link>
+                </Stack>
+
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
+                  <Link
+                    href='https://www.instagram.com/metaphi.innovations/?hl=en'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    underline="none"
+                    color="inherit"
+                    sx={{ display: 'flex', alignItems: 'center' }}
+                  >
+                    <img src={InstagramIcon} alt="Instagram Icon" style={{ width: 20, height: 20, marginRight: 8 }} />
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
+                      www.metaphi.in
+                    </Typography>
+                  </Link>
+                </Stack>
+
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
+                  <Link
+                    href='https://www.linkedin.com/in/avnishmmehta/'
+                    underline="none"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    sx={{ display: 'flex', alignItems: 'center' }}
+                  >
+                    <img src={LinkedInIcon} alt="Linkedin Metaphi" style={{ width: 20, height: 20, marginRight: 8 }} />
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
+                      LinkedIn Metaphi
+                    </Typography>
+                  </Link>
+                </Stack>
+
+
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
                   <Link
                     href="https://metaphi.in/"
                     target="_blank"
@@ -325,8 +367,40 @@ function App() {
                     sx={{ display: 'flex', alignItems: 'center' }}
                   >
                     <img src={LanguageIcon} alt="Website" style={{ width: 20, height: 20, marginRight: 8 }} />
-                    <Typography fontWeight="500" fontFamily="Nunito Sans" variant="body2">
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
                       www.metaphi.in
+                    </Typography>
+                  </Link>
+                </Stack>
+
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
+                  <Link
+                    href='/files/MIPL company profile.pdf'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    underline="none"
+                    color="inherit"
+                    sx={{ display: 'flex', alignItems: 'center' }}
+                  >
+                    <img src={PictureAsPdfIcon} alt="pdf" style={{ width: 20, height: 20, marginRight: 8 }} />
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
+                      Company Brochure
+                    </Typography>
+                  </Link>
+                </Stack>
+
+                <Stack direction="row" alignItems="center" spacing={1} sx={{ width: { xs: '100%', md: '30%' } }}>
+                  <Link
+                    href='https://www.google.com/maps/place/K+DIGITALCURRY/@19.0875495,72.9075216,13z/data=!4m6!3m5!1s0x3be7c774623709b5:0x967265778402237d!8m2!3d19.0866689!4d72.9080822!16s%2Fg%2F11rggrcpkm?entry=ttu&g_ep=EgoyMDI1MDUyOC4wIKXMDSoASAFQAw%3D%3D'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    underline="none"
+                    color="inherit"
+                    sx={{ display: 'flex', alignItems: 'center' }}
+                  >
+                    <img src={MapIcon} alt="map icon" style={{ width: 20, height: 20, marginRight: 8 }} />
+                    <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans" noWrap>
+                      Ghatkopar West, Mumbai, 400086
                     </Typography>
                   </Link>
                 </Stack>
@@ -335,7 +409,7 @@ function App() {
 
           </Box>
 
-          <Stack direction="row" justifyContent="center" alignItems="center" spacing={2} my={3}>
+          {/* <Stack direction="row" justifyContent="center" alignItems="center" spacing={2} my={3}>
             {socialLinks.map(({ iconSrc, url, alt, download }, i) => (
               <Link
                 key={i}
@@ -372,13 +446,13 @@ function App() {
               }}
             >
               <img src={ShareIcon} alt="Share" style={{ width: 18, height: 18 }} />
-            </Box> */}
+            </Box>  
 
-          </Stack>
+          </Stack> */}
 
           <Box mt={4} sx={{
             display: 'flex',
-            flexDirection: {xs: "column", md: "row"},
+            flexDirection: { xs: "column", md: "row" },
             gap: 1
           }}>
 
@@ -444,7 +518,6 @@ function App() {
 
             </Link>
 
-            {/* Add to Contact Button */}
             <Link
               href="/files/avnishContact.vcf"
               download
@@ -468,11 +541,11 @@ function App() {
                   alignItems: 'center',
                   py: 0.6,
                   cursor: 'pointer',
-                  
+
                 }}
               >
                 <PersonAddAltIcon sx={{ color: 'white', mr: 1 }} />
-                <Typography color="white" fontWeight="bold" fontFamily = 'Nunito Sans'>
+                <Typography color="white" fontWeight="bold" fontFamily='Nunito Sans'>
                   Add to Contact
                 </Typography>
               </Box>
