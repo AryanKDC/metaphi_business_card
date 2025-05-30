@@ -335,7 +335,7 @@ function App() {
                   >
                     <img src={InstagramIcon} alt="Instagram Icon" style={{ width: 20, height: 20, marginRight: 8 }} />
                     <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
-                      www.metaphi.in
+                      Instagram
                     </Typography>
                   </Link>
                 </Stack>
