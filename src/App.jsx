@@ -320,7 +320,7 @@ function App() {
                   >
                     <img src={LinkedInIcon} alt="Linkedin Avnish" style={{ width: 20, height: 20, marginRight: 8 }} />
                     <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans" sx={{}}>
-                      LinkedIn Avnish Mehta
+                      Avnish Mehta
                     </Typography>
                   </Link>
                 </Stack>
@@ -352,7 +352,7 @@ function App() {
                   >
                     <img src={LinkedInIcon} alt="Linkedin Metaphi" style={{ width: 20, height: 20, marginRight: 8 }} />
                     <Typography variant="body2" fontWeight="500" fontFamily="Nunito Sans">
-                      LinkedIn Metaphi
+                      Metaphi Innovations
                     </Typography>
                   </Link>
                 </Stack>
