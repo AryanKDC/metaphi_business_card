@@ -194,20 +194,20 @@ function App() {
                 CEO & Founder
               </Typography>
               <Typography variant="body2" color="#000000" fontSize="16px" fontFamily="Nunito Sans">
-                <span style={{ fontFamily: "AirIndiaRegular" }}>Metaphi Innovations</span> <br /> Tech Entrepreneur and Digital Transformation Strategist
+                Tech Entrepreneur and Digital Transformation Strategist
               </Typography>
             </Box>
 
             <Box mt={"44px"}>
               <Typography sx={{
-                textAlign: { lg: 'center', xs: "" },
+                textAlign: { md: 'center', xs: "" },
                 mb: 2,
                 fontFamily: "AirIndiaRegular",
                 fontSize: '20px'
               }}>
                 Services
               </Typography>
-              <Stack direction="row" flexWrap="wrap" gap={1} justifyContent={{ lg: 'center', xs: 'flex-start' }}>
+              <Stack direction="row" flexWrap="wrap" gap={1} justifyContent={{ md: 'center', xs: 'flex-start' }}>
                 {[...primaryServices, ...(showMore ? additionalServices : [])].map((service, index) => (
                   <Box
                     key={index}
